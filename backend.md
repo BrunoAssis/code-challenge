@@ -16,8 +16,8 @@ Para isso, vamos fornecer para você alguns dados. Neste [json](properties.json)
       "title": "Imóvel código 1, com 5 quartos e 4 banheiros", // property title
       "price": 1250000, // price
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", // description
-      "x": 870, // lat (Spotippos geographic coordinate)
-      "y": 867, // long (Spotippos geographic coordinate)
+      "lat": 870, // Spotippos geographic coordinate - X
+      "long": 867, // Spotippos geographic coordinate - Y
       "beds": 5, // number of beds
       "baths": 4, // number of baths
       "provinces" : ["Scavy"], // spotippos provinces
@@ -55,8 +55,8 @@ POST /properties
 Body:
 ```json
 {
-  "x": 222,
-  "y": 444,
+  "lat": 222,
+  "long": 444,
   "title": "Imóvel código 1, com 5 quartos e 4 banheiros",
   "price": 1250000,
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
